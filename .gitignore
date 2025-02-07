@@ -1,0 +1,7 @@
+*
+!.gitignore
+!wp-content/
+wb-content/*
+!wb-content/themes/
+wb-content/themes/*
+!wb-content/themes/dw/
