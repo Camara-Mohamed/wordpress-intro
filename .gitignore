@@ -1,7 +1,9 @@
 *
 !.gitignore
 !wp-content/
-wb-content/*
-!wb-content/themes/
-wb-content/themes/*
-!wb-content/themes/dw/
+wp-content/*
+!wp-content/themes/
+wp-content/themes/*
+!wp-content/themes/dw/
+!wp-content/themes/dw/*
+!wp-content/themes/dw/*/*
