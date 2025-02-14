@@ -1,8 +1,8 @@
-<?php /* Template Name: Page "À propos" */ ?>
+<?php /* Template Name: Page "Contact" */ ?>
 <?php get_header(); ?>
 
     <aside>
-        <h2>À propos de moi</h2>
+        <h2>Contact</h2>
     </aside>
 <?php
 // On ouvre "La boucle" (The Loop), la structure de contrôle
