@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+<aside>
+    <h2>Bienvenue sur mon site&nbsp;</h2>
+</aside>
 <?php
 // On ouvre "La boucle" (The Loop), la structure de contrôle
 // de contenu propre a WordPress :
