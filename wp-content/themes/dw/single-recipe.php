@@ -1,22 +1,38 @@
 <?php get_header(); ?>
 
-<style>
-.recipe {
-    display: none;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
+<style type="text/css">
+    .recipe {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 
-.recipe_ingredients {
-    width: 320px;
-    padding: 20px;
-    background: #0a4b78;
-    display: flex;
-    padding-top: 100%;
-}
-.recipe_img {
-    display: block;
-}
+    .recipe__ingredients {
+        width: 320px;
+        padding: 20px;
+        background: #f1f1f1;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .recipe__fig {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 100%;
+        margin: 0;
+    }
+
+    .recipe__img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 </style>
 
 <?php
@@ -34,8 +50,8 @@ if (have_posts()): while (have_posts()): the_post(); ?>
                 <h3>Ingrédients</h3>
                 <p>À compléter</p>
             </div>
-            <figure class="recipe_figure">
-                <?= get_post_thumbnail_id(size: 'medium', attr: ['recipe_img']); ?>
+            <figure class="recipe__fig">
+                <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'recipe__img']); ?>
             </figure>
         </aside>
         <section class="recipe_steps">
